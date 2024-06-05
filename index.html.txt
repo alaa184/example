@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hashemite University Exams</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Hashemite University Exams</h1>
+        <div id="take-exam">
+            <h2>Take Exam</h2>
+            <form id="student-exam-form">
+                <div class="question">
+                    <p>1. What is the first phase in the documentation process?</p>
+                    <label><input type="radio" name="q1" value="A"> A. Conduct reviews and test</label><br>
+                    <label><input type="radio" name="q1" value="B"> B. Write the alpha draft</label><br>
+                    <label><input type="radio" name="q1" value="C"> C. Perform the user analysis</label><br>
+                    <label><input type="radio" name="q1" value="D"> D. Start the project</label>
+                </div>
+                <div class="question">
+                    <p>2. Which of the following is a part of the documentation project plan?</p>
+                    <label><input type="radio" name="q2" value="A"> A. Description of the users</label><br>
+                    <label><input type="radio" name="q2" value="B"> B. Creating hypertext links</label><br>
+                    <label><input type="radio" name="q2" value="C"> Choosing software capabilities</label><br>
+                    <label><input type="radio" name="q2" value="D"> D. Conducting a field evaluation</label>
+                </div>
+                <div class="question">
+                    <p>3. What is the primary benefit of online help for the user?</p>
+                    <label><input type="radio" name="q3" value="A"> A. It requires more learning</label><br>
+                    <label><input type="radio" name="q3" value="B"> B. It saves paper</label><br>
+                    <label><input type="radio" name="q3" value="C"> C. It provides fast access to information</label><br>
+                    <label><input type="radio" name="q3" value="D"> D. It takes up disk space</label>
+                </div>
+                <div class="question">
+                    <p>4. In which phase are documents reviewed and tested?</p>
+                    <label><input type="radio" name="q4" value="A"> A. During the user analysis</label><br>
+                    <label><input type="radio" name="q4" value="B"> B. After writing the alpha draft</label><br>
+                    <label><input type="radio" name="q4" value="C"> C. During the final draft phase</label><br>
+                    <label><input type="radio" name="q4" value="D"> D. When creating the task sheet</label>
+                </div>
+                <div class="question">
+                    <p>5. Which of the following is NOT considered a function of the documentation plan?</p>
+                    <label><input type="radio" name="q5" value="A"> A. Managerial</label><br>
+                    <label><input type="radio" name="q5" value="B"> B. Persuasive</label><br>
+                    <label><input type="radio" name="q5" value="C"> Design</label><br>
+                    <label><input type="radio" name="q5" value="D"> Creative</label>
+                </div>
+                <button type="button" onclick="endExam()">End Exam</button>
+            </form>
+            <div id="result" style="display:none;">
+                <h3>Your Score: <span id="score"></span></h3>
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
